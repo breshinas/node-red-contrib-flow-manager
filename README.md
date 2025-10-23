@@ -4,7 +4,7 @@ This is a fork from the excellent node-red-contrib-flow-manager with a small pat
 
 Flow Manager separates your flow json to multiple files
 
-[View change log](https://raw.githubusercontent.com/breshinas/node-red-contrib-flow-manager/-/blob/master/CHANGELOG.md)
+[View change log](https://raw.githubusercontent.com/breshinas/node-red-contrib-flow-manager/refs/heads/master/CHANGELOG.md)
 
 ### Installation
 
@@ -44,12 +44,12 @@ The nodes will be stored in the following subdirectories of your Node-RED path a
 
 It's a good idea to add these paths to your version control system. 
 
-#### ![Filter Flows](https://raw.githubusercontent.com/breshinas/node-red-contrib-flow-manager/-/raw/0.7.1/img/filter_flows_button.png)
+#### ![Filter Flows](https://github.com/breshinas/node-red-contrib-flow-manager/blob/master/img/filter_flows_button.png?raw=true)
 * Allows selecting which flows Node-RED will load, and which will be ignored and not loaded, **not only in Node-RED's UI, also in it's NodeJS process.** <br/>
 * Unselected flows are NOT deleted, only "ignored" until you select them again using `Filter Flows`.
 * Filtering configuration is stored in `flow-manager-cfg.json` file under your Node-RED path.
 * if `flow-manager-cfg.json` file does not exist, or exists but malformed, or contains an empty JSON array, then all flows will be loaded and no filtering is done.
-* ![Filter Flows Popup](https://raw.githubusercontent.com/breshinas/node-red-contrib-flow-manager/-/raw/0.7.1/img/filter_flows_popup.png)
+* ![Filter Flows Popup](https://github.com/breshinas/node-red-contrib-flow-manager/blob/master/img/filter_flows_popup.png?raw=true)
     
 ### envnodes
 envnodes allows configuration of nodes using an external source and custom logic.<br/>
@@ -100,10 +100,10 @@ module.exports = async function() {
 
 Attempting to change any envnode controlled property via Node-RED UI/AdminAPI will be cancelled (with a warning popup) to keep original values defined in your envnodes configuration.
 
-![EnvNodes Warning](https://raw.githubusercontent.com/breshinas/node-red-contrib-flow-manager/-/raw/0.7.1/img/envnodes_warning.png)
+![EnvNodes Warning](https://github.com/breshinas/node-red-contrib-flow-manager/blob/master/img/envnodes_warning.png?raw=true)
 
 ### Remote Deploy
-![Remote Deploy Button](https://raw.githubusercontent.com/breshinas/node-red-contrib-flow-manager/-/raw/0.7.1/img/remote_deploy_button.png)
+![Remote Deploy Button](https://github.com/breshinas/node-red-contrib-flow-manager/blob/master/img/remote_deploy_button.png?raw=true)
 
 If you work in a server-client environment, where you work locally on your flows, and once in a while need to push your local changes to a remote process running Node-RED.
 
@@ -130,9 +130,9 @@ Do the following to enable Remote Deployment feature:<br/>
 * Restart Node-RED
 * You should see the new "Remote Deploy" button on top of the Node-RED UI.
 
-![Remote Deploy Remote Selection](https://raw.githubusercontent.com/breshinas/node-red-contrib-flow-manager/-/raw/0.7.1/img/remote_deploy_select_remote.png)
+![Remote Deploy Remote Selection](https://github.com/breshinas/node-red-contrib-flow-manager/blob/master/img/remote_deploy_select_remote.png?raw=true)
 
-![Remote Deploy Diff Tool](https://raw.githubusercontent.com/breshinas/node-red-contrib-flow-manager/-/raw/0.7.1/img/remote_diff.png)
+![Remote Deploy Diff Tool](https://github.com/breshinas/node-red-contrib-flow-manager/blob/master/img/remote_diff.png?raw=true)
 
     
 ### YAML flow file format
@@ -338,6 +338,3 @@ curl --request GET \
   http://localhost:1880/flow-manager/remotes/Production/flow-names
 
 ```
-
-
-[Change Log]: https://raw.githubusercontent.com/breshinas/node-red-contrib-flow-manager/-/raw/0.8.0/CHANGELOG.md
