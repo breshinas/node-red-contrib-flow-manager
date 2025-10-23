@@ -2,7 +2,7 @@
   "name": "@breshinas/node-red-contrib-flow-manager",
   "version": "0.8.0",
   "node-red": {
-	"version": ">=2.0.0",
+    "version": ">=2.0.0",
     "nodes": {
       "flow-manager": "flow-manager.js"
     }
@@ -31,10 +31,10 @@
     "node",
     "red",
     "flow",
-    "manager",
+    "manager"
   ],
   "publishConfig": {
-	  "access": "public"
+    "access": "public"
   },
   "author": "Aleksey Breshin",
   "license": "MIT"
